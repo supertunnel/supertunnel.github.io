@@ -2,17 +2,26 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>GGRG at Guangzhou University</title>
+    <title>ITEM Research Group at Guangzhou University</title>
+    <link rel="stylesheet" href="./dist/carousel.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <style>
+    .carousel-inner {
+        height: 200px;
+        max-width: 1500px;
+    }
+    </style>
   </head>
   <body>
-    <div style="margin:50px 20% 0 20%; line-height:1.5;">
+    <!div style="margin:50px 20% 0 20%; line-height:1.5;">
+    <div class="page__hero--overlay" style="background-image: linear-gradient(rgba(255,255,255, 0.5), rgba(0, 0, 0, 0.5)), url(&#39;./images/guangzhou.jpg&#39;); background-size:100% 100%; margin:0 20% 0 20%; line-height:10" >
       <div style="margin:auto;display:inline;">
           <a>
-              <img height="150" style="height:6vw;position:relative" src="./images/logofull.png" border="0">
+              <img height="150" style="height:6vw;position:relative" src="./images/logo-new.png" border="10">
           </a>
       </div>
         <div style="margin:10px 10px auto auto;display:inline;float:right;">
@@ -26,6 +35,7 @@
         </div>
     </div>
   </body>
+  
 <body>
     <nav class="nav" style="background:white;border:2px solid;border-radius:5px;">
         <ul style="text-align: center;">
@@ -39,24 +49,51 @@
             <li><a href="javascript:void(0);">Contact Us</a></li>
         </ul>
     </nav>
-    <div style="margin:10px 20% 30px;background:white;border:2px solid;border-radius:5px;">
-        <div style="margin:2% 1%;line-height:1.5;">
-            <a>
-                <img width="100%" src="./images/research.png" border="0">
-            </a>
+    <div class="carousel-inner" id="carousel_container">
+            <div class="item">
+                <img src="./sliders/slider1.png" alt="Slide 1">
+            </div>
+            <div class="item">
+                <img src="./sliders/slider2.png" alt="Slide 2">
+            </div>
+            <div class="item active">
+                <img src="./sliders/slider1.png" alt="Slide 1">
+            </div>
+            <div class="item">
+                <img src="./sliders/slider2.png" alt="Slide 2">
+            </div>
+        <span class="btn-prev">‹</span>
+        <span class="btn-next">›</span>
+        <div class="btn-num-container">
+            <span data-slide-to=0 class="btn-num"></span>
+            <span data-slide-to=1 class="btn-num"></span>
+            <span data-slide-to=2 class="btn-num"></span>
+            <span data-slide-to=3 class="btn-num"></span>
         </div>
+    </div>  
+    <script src="./dist/carousel.min.js"></script>
+    <script>
+    var carousel = new Carousel({
+        container: document.getElementById('carousel_container'),
+        startIndex: 0,
+        duration: 600,
+        interval: 2000,
+        isCycle: true,
+        isTouch: true
+        //direction:'vertical'
+    });
+    </script>  
+    <div style="margin:10px 20% 30px;background:white;border:2px solid;border-radius:5px;">
         <div style="margin:2% 1%;line-height:1;">
             <font face="georgia,serif" style="font-size:1vw">
                 <div style="text-align:justify; line-height:200%">
                     <p>
-                        Welcome. This is Geomechanics and Geohazards Research Group (GGRG) at School of Civil Engineering of Guangzhou University. Our research focuses on the development and application of numerical approaches on geotechnical engineering and geology process in nature, such as tunneling (especially undersea tunnel), urban excavation, smart sensing of underground structures, and debris flow, etc.
+                        Welcome. This is Intelligent Tunneling and Engineering Monitoring (ITEM) Research Group at School of Civil Engineering, Guangzhou University. Our research focuses on the development and application of numerical approaches on geotechnical engineering and geology process in nature, such as tunneling (especially undersea tunnel), urban excavation, and smart sensing of underground structures, etc. Currently, we are working on the following topics:
                     </p>
-                    Currently, we are working on the following topics:
-                    <ul>
-                        <li>Multi-scale coupling mechanism and intelligent early warning of undersea shield tunneling disasters under complex geological conditions (<strong><u>funded by NSFC, No. 52178385</u></strong>).</li>
-                        <li>The macro-micro mechanism of solid-fluid coupling effect during synchronized grouting of shield tunneling in sandy-cobble strata (<strong><u>funded by NSFC, No. 51808150</u></strong>).</li>
-                        <li>Multiscale modeling for the soil responses during failure process in tunneling (<strong><u>funded by Guangdong-NSF, No. 2018A030313132</u></strong>).</li>
-                        <li>Smart WSN monitoring on the ground responses induced by urban excavation (<strong><u>funded by Guangzhou Science and Technology Programme, No. 202201020171 and No. 202102020617</u></strong>).</li>
+                    <p>(1) Multi-scale coupling mechanism and intelligent early warning of undersea shield tunneling disasters under complex geological conditions (<strong><u>funded by NSFC, No. 52178385</u></strong>).</p>
+                    <p>(2) The macro-micro mechanism of solid-fluid coupling effect during synchronized grouting of shield tunneling in sandy-cobble strata (<strong><u>funded by NSFC, No. 51808150</u></strong>).</p>
+                    <p>(3) Multiscale modeling for the soil responses during failure process in tunneling (<strong><u>funded by Guangdong-NSF, No. 2018A030313132</u></strong>).</p>
+                    <p>(4) Smart WSN monitoring on the ground responses induced by urban excavation (<strong><u>funded by Guangzhou Science and Technology Programme, No. 202201020171 and No. 202102020617</u></strong>).</p>
                     </ul>
                 </div>
             </font>
