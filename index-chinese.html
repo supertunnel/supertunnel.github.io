@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <!meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes" />
+    <title>广州大学ITEM研究组</title>
+    <link rel="stylesheet" href="./dist/carousel.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <style>
+    html {
+        font-size: 16px; /* 设置基准字体大小 */
+    }
+    .carousel-inner {
+        height: 200px;
+        max-width: 100%;
+        width:inherit;
+    }
+    body {
+        font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.8;
+    }
+    .content-text {
+        line-height: 2.0;
+        font-size: 1.1em;
+    }
+    /* 导航栏专用样式 */
+    .nav ul {
+        font-size: 1.2em;
+        line-height: 2;
+        font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        font-weight: normal;
+        padding: 10px 0;
+        margin: 0;
+    }
+    .nav li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+    .nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1em;
+    }
+    </style>
+</head>
+<body>
+    <div class="page__hero--overlay" style="background-image: linear-gradient(rgba(255,255,255, 0.5), rgba(0, 0, 0, 0.5)), url(&#39;./images/guangzhou.jpg&#39;); background-size:100% 100%; margin:0 20% 0 20%; line-height:10;" >
+        <div style="margin:10px; display:inline;">
+            <a>
+                <img style="height:4.5vw;position:relative" src="./images/logo-new.png">
+            </a>
+        </div>
+        <div style="margin:-70px 10px auto auto;display:inline;float:right;">
+            <a href="./index-chinese.html">中文</a>
+            <a> | </a>
+            <a href="./index.html">English</a>
+        </div>
+    </div>
+
+    <nav class="nav" style="background:white;border:2px solid;border-radius:5px;">
+        <ul style="text-align: center;">
+            <li><a href="./index-chinese.html">首页</a></li>
+            <li><a href="./PI.html">团队负责人</a></li>
+            <li><a href="./Group.html">团队成员</a></li>
+            <li><a href="./Research.html">研究方向</a></li>
+            <li><a href="./Publication.html">发表成果</a></li>
+            <li><a href="./teaching.html">教学工作</a></li>
+            <li><a href="./groupnews.html">团队动态</a></li>
+        </ul>
+    </nav>
+
+    <div style="margin:10px 20% 30px;background:white;border:2px solid;border-radius:5px;">
+        <div class="carousel-inner" id="carousel_container" style="margin:2% 2%">
+            <div class="item">
+                <img src="./sliders/slider1.png" alt="幻灯片1">
+                <p> 了解我们 </p>
+            </div>
+            <div class="item">
+                <img src="./sliders/slider2.png" alt="幻灯片2">
+            </div>
+            <div class="item active">
+                <img src="./sliders/slider3.png" alt="幻灯片3">
+            </div>
+            <div class="item">
+                <img src="./sliders/slider2.png" alt="幻灯片4">
+            </div>
+            <span class="btn-prev">‹</span>
+            <span class="btn-next">›</span>
+            <div class="btn-num-container">
+                <span data-slide-to=0 class="btn-num"></span>
+                <span data-slide-to=1 class="btn-num"></span>
+                <span data-slide-to=2 class="btn-num"></span>
+                <span data-slide-to=3 class="btn-num"></span>
+            </div>
+        </div>  
+        <script src="./dist/carousel.min.js"></script>
+        <script>
+        var carousel = new Carousel({
+            container: document.getElementById('carousel_container'),
+            startIndex: 0,
+            duration: 600,
+            interval: 2000,
+            isCycle: true,
+            isTouch: true
+        });
+        </script>
+
+        <div style="margin:2% 2%;" class="content-text">
+            <div style="text-align:justify;">
+                <p style="font-size: 1.1em; line-height: 2; text-indent: 2em;">
+                    欢迎访问智能隧道与工程监测（ITEM）课题组。我们的研究主要聚焦于隧道工程智能防灾减灾相关的理论和技术，如隧道施工智能控制技术、隧道运营动力灾变机理、隧道健康智能评估技术等。目前，课题组正在开展以下研究：
+                </p>
+                <p style="font-size: 1.1em; line-height: 2;">(1) 国家重点研发计划项目 "施工感知与装备作业参数反馈控制的智能建造与多机协同技术" (项目编号：2023YFB2603904) —— 子课题：智能装备障碍识别与避障技术。</p>
+                <p style="font-size: 1.1em; line-height: 2;">(2) 复杂地质条件下海底盾构隧道灾害的多尺度耦合机制与智能预警 (国家自然科学基金项目，编号：52178385)。</p>
+                <p style="font-size: 1.1em; line-height: 2;">(3) 砂卵石地层盾构同步注浆固-液耦合效应的宏微观机制 (国家自然科学基金项目，编号：51808150)。</p>
+                <p style="font-size: 1.1em; line-height: 2;">(4) 隧道施工过程中土体破坏响应的多尺度建模 (广东省自然科学基金项目，编号：2018A030313132)。</p>
+                <p style="font-size: 1.1em; line-height: 2;">(5) 城市开挖引起的地面响应的智能无线传感网络监测 (广州市科技计划项目，编号：202201020171 和 202102020617)。</p>
+            </div>
+        </div>
+
+        <div style="margin:30px 0%; float:right;">
+            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=tt&d=xGnQL2tn8Aeb_t-BrPtnOGaDA0NOJZdmuwIHHBK46Kw&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
+        </div>
+    </div>
+
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?141b88808c9bda93e7b77c3f5e4c2d31";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88436585-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
+</html>
